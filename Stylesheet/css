@@ -1,0 +1,122 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background: #4a90e2;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+header h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+
+#personal-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+#personal-info div {
+    margin-bottom: 20px;
+    flex: 1 1 200px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+#slack-profile-picture img {
+    width: 545px;
+    height: 727px;
+    max-width: 100%;
+    height: auto;
+}
+
+#goals {
+    margin: 20px 0;
+    padding: 10px;
+}
+
+#goals h2 {
+    text-align: center;
+    color: #4a90e2;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+#goals ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#goals li {
+    background: #e9f7fd;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 5px solid #4a90e2;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#goals li:hover {
+    background: #d1ecf9;
+    transform: translateX(5px);
+}
+
+#links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+#links a {
+    display: block;
+    margin: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    background: #4a90e2;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#links a:hover {
+    background: #357ab8;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    
+    #personal-info {
+        flex-direction: column;
+        align-items: center;
+    }
+}
